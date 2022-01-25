@@ -5,7 +5,7 @@ function render_time() {
     var time = new Date().toTimeString().slice(0,8);
     if (time !== time_cache)) {
       document.getElementById("clock-digits-p").innerHTML = time;
-      time_cash = time;
+      time_cache = time;
     }
 }
 
