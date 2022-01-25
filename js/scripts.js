@@ -1,9 +1,9 @@
 var ms_render_delay = 40;
-var time_cash = new Date().toTimeString().slice(0,8);
+var time_cache = new Date().toTimeString().slice(0,8);
 
 function render_time() {
     var time = new Date().toTimeString().slice(0,8);
-    if (! (time === time_cash)) {
+    if (time !== time_cache)) {
       document.getElementById("clock-digits-p").innerHTML = time;
       time_cash = time;
     }
